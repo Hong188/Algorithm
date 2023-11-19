@@ -4,6 +4,19 @@
 */
 
 
+/* 해설 보기 전 내 알고리즘 
+#include <stdio.h>
+int main() {
+	int N, X;
+	scanf("%d %d", &N, &X);
+
+
+		printf("%d ",)
+	return 0;
+}
+*/
+
+//해설
 #include <stdio.h>
 int main() {
 	int N, X;
