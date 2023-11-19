@@ -3,19 +3,6 @@
   둘째 줄에 수열 A를 구성하는 정수를 N개를 한 칸 간격으로 입력, X보다 작은 수를 입력받은 순서대로 출력해야 함 
 */
 
-
-/* 해설 보기 전 내 알고리즘 
-#include <stdio.h>
-int main() {
-	int N, X;
-	scanf("%d %d", &N, &X);
-
-
-		printf("%d ",)
-	return 0;
-}
-*/
-
 //해설
 #include <stdio.h>
 int main() {
