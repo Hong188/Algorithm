@@ -1,6 +1,10 @@
-//pointer 22/11
+// pointer_  22/11
 
 #include <stdio.h>
+int main_1(void);
+int main_2(void);
+int main_3(void);
+
 int main(void)
 {
 	int i = 10;
@@ -11,5 +15,54 @@ int main(void)
 	printf("c의 주소 : %u\n", &c); // 변수 c의 주소 출력
 	printf("f의 주소 : %u\n", &f); // 변수 f의 주소 출력
 	
+	main_1(); //main_1 호출 의미 ! 
+
+
 	return 0;
-	}
+}
+
+int main_1(void)
+{
+	int x = 10, y = 20;
+	int* p;
+
+	p = &x;
+	printf("p=%u\n", p);
+	printf("*p=%d\n\n", *p);
+
+	p = &y;
+	printf("p=%u\n", p);
+	printf("p=%d\n", *p);
+	return 0;
+}
+
+int main_2(void)
+{
+	int i = 10;
+	int *p;
+
+	p = &i;
+	printf("i=%d\n", i);
+
+	*p = 20;
+	printf("i=%d\n", i);
+	return 0;
+}
+
+
+void inc(int* num) {
+	(*num)++;
+}
+
+int main_3() {
+	int a;
+
+	printf("정수 입력: ");
+	scanf("%d", &a);
+
+	printf("증가 전 : a=%d\n", a);
+	inc(&a);
+	printf("증가 후 : a=%d\n", a);
+
+	return 0;
+}
