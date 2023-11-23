@@ -1,0 +1,13 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main() {
+	int n,t,k;
+	scanf("%d", &n);
+	for (t = 1; t<=n; t++) {
+		for (k = 1; k <= t; k++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
