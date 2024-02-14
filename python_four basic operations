@@ -1,0 +1,19 @@
+#a,b = input("곱셉할 두 수를 입력하시오. 예) 5 4").split()
+#split : 입력받은 숫자를 스페이스바 기준으로 2개로 분리함
+
+#a에는 5, b에는 4가 입력됨
+
+#이스케이프 시퀀스
+# \n : 엔터키
+# \t : 탭 키
+# \\ : 원화 기호 출력
+
+#print(int(a)*int(b))
+
+#a,b=input("곱셈할 두 수를 입력하시오. ex) 5 4 \n").split()
+#print(int(a)*int(b))
+
+a,b=input("곱셈할 두 수를 입력하시오. ex) 5 4 \n").split()
+#print(f"두 수의 곱셈 결과 값은?{int(a)*int(b)}입니다.")
+
+print(f"{a}*{b}={int(a)*int(b)} 입니다.")
